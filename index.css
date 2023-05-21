@@ -1,0 +1,30 @@
+input.ng-invalid {
+    background-color: rgb(231, 217, 219);
+}
+#center{
+    /* border: 3px solid black; */
+    width: 40%;
+    margin: 0 auto;
+    background-color: rgb(207, 229, 248);
+}
+input{
+    border-radius: 6px;
+    padding: 5px;
+    width: 280px;
+}
+body{
+    background-color: rgb(215, 195, 234);
+}
+button{
+    border-radius: 15px;
+    margin-left: 20px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(21, 3, 39);
+    color: white;
+    
+}
+li{
+    margin: 23px;
+}

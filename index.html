@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="todoApp">
+<head>
+	<title>AngularJS To-Do List</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div ng-controller="todoCtrl" id="center">
+		<h1>To-Do List</h1>
+		<form ng-submit="addTodo()">
+			<input type="text" ng-model="newTodo" placeholder="Add a to-do" required>
+			<button type="submit">Add</button>
+		</form>
+		<ul>
+			<li ng-repeat="todo in todos">
+				<span ng-class="{done: todo.done}">{{todo.text}}</span>
+				<button ng-click="remove(todo)">Remove</button>
+			</li>
+		</ul>
+        <button ng-click="complete()">All Completed</button>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
